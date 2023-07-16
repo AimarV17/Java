@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Mayor_Edad {
+    public static void main(String[] args) {
+        
+        Scanner in =  new Scanner(System.in);
+        String nombre = "";
+        int  edad = 0;
+        
+        System.out.println("ingrese su nombre ");
+        nombre = in.nextLine();
+        
+        System.out.println("ingrese su edad ");
+        edad = in.nextInt();
+        
+        if(edad >= 18){
+            System.out.println("es mayor de edad : " +nombre );
+        }else 
+        System.out.println( "es menor de edad :" +nombre );
+    }
+}

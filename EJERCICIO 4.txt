@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+       Scanner in = new Scanner(System.in);
+       
+        String nombre = "";
+        int an = 0, ventas = 0;
+        int sbase = 500;
+        double  bon1 = 0.10, bon2 = 0.5;
+        double sabo = 0, nosa = 0;
+        
+        System.out.println("cual es su nombre ?");
+        nombre = in.nextLine();
+        
+        System.out.println("cuanto tiempo  ha trabajado en la empresa ?");
+        an = in.nextInt();
+        
+        System.out.println("cuantas ventas ha realizado ?");
+        ventas = in.nextInt();
+        
+        if (an >=3 && ventas >= 20){
+            System.out.println("seras beneficiario del  bono de 10% ");
+            sabo= 500 * 0.10; 
+             System.out.println("tu salario  : "+ nombre+ " sera de  : $"+ sabo);
+            
+        }else if (an <=2 && ventas <=15){
+            System.out.println("seras beneficiario del  bono de 5% ");
+            nosa = 500 * 0.5;
+            System.out.println("tu salario : "+ nombre+ " sera de  : $"+ nosa);
+        }
+        
+    }
+}

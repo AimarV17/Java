@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class Numero_Primo {
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner (System.in);
+        String nombre= "";
+        int opc = 0;
+        
+        System.out.println("cual es su nombre ?");
+        nombre = in.nextLine();
+        
+        System.out.println("que desea realizar " + nombre);
+        opc = in.nextInt();
+        
+        switch (opc){
+            case 1: 
+                System.out.println("saldo disponible ");
+                break;
+                case 2:
+                    System.out.println("recarga  ");
+                    break;
+                    case 3:
+                        System.out.println("planes  ");
+                        break;
+                        case 4 :
+                            System.out.println("mensaje ");
+                            break;
+                            default:
+                            System.out.println("opcion invalida ");
+                            break;
+                            
+        }
+    }
+}
